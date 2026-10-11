@@ -30,7 +30,7 @@ flowchart LR
     writing_style --> dockerfiles[dockerfiles]
     writing_style --> compose[docker-compose]
     writing_style --> vex[vex]
-    writing_style --> actions[github-actions]
+    writing_style --> actions[respond-to-github-actions-workflow-failure]
     writing_style --> kubernetes[troubleshooting-kubernetes]
     writing_style --> makefiles[makefiles]
     writing_style --> python[python]
