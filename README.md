@@ -19,7 +19,7 @@ Documentation AI agents can use to approach software-related problems like how I
 | [vex](skills/vex/SKILL.md) | Vulnerability Exploitability eXchange assessments |
 | [writing-style](skills/writing-style/SKILL.md) | Plain, practical prose and documentation |
 
-## Skill map
+## Skill Map
 
 Arrows point from a skill to the skills it influences.
 
