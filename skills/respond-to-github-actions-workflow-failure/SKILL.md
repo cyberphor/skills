@@ -1,7 +1,7 @@
 ---
 name: respond-to-github-actions-workflow-failure
 description: Analyze and respond to a GitHub Actions workflow failure. Use when asked to analyze and/or respond to a GitHub Actions workflow failure.
-compatibility: Requires access to the internet, the GitHub CLI (gh), and a GitHub Personal Access Token (saved as an environment variable called GH_TOKEN) with at least Contents (Read-only), Pull requests (Read and write), and Workflows (Read and write) permissions in the repository where the workflow ran.
+compatibility: Requires access to the internet, the GitHub CLI (gh), and a GitHub Personal Access Token (saved as an environment variable called GH_TOKEN) with at least Contents (Read and write), Pull requests (Read and write), and Workflows (Read and write) permissions in the repository where the workflow ran.
 ---
 
 ## Setup
