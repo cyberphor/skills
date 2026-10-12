@@ -6,7 +6,7 @@ compatibility: Requires access to the internet, the GitHub CLI (gh), and a GitHu
 
 ## Prerequisites
 
-Check if tools below are installed. If any of them are not installed, stop your analysis/response and report which tools are missing.
+Check if the tools below are installed. If any of them are not installed, stop what you are doing, report which tools are missing, and do not continue.
   * GitHub CLI (`gh`)
   * Make (`make`)
 
