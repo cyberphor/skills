@@ -1,6 +1,6 @@
 # Changelog
 
-## [0.1.6] - 2026-10-06
+## [0.1.6] - 2026-10-14
 ### Added
 - Added `dockerfiles`, `docker-compose`, `vex`, and `troubleshooting-kubernetes` skills
 - Added `python-django` and `go-bubbletea` skills
@@ -14,6 +14,9 @@
 - Updated the Makefile to validate skills with `skills-ref` through uv before packaging
 - Updated `skill-writing` with Agent Skills format, authoring, description evaluation, pop culture example naming, and readable source-link guidance that preserves attribution, and audited all skills to clarify discovery, shared guidance, and verification
 - Updated the `go` and `makefiles` skills to prefer Go install builds and omit Go run targets by default, and the `python` and `makefiles` skills to prefer uv for Python workflows
+
+### Removed
+- Removed the `skill-writing` skill
 
 ## [0.1.5] - 2026-10-05
 ### Added
