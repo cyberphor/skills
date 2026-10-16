@@ -3,7 +3,7 @@ name: write-changelog
 description: Create or update repository CHANGELOG.md files in the preferred style. Use when asked to edit a changelog or when repository changes require a changelog entry.
 ---
 
-# Write Changelog
+# How to Write Changelog
 
 Read the existing changelog, relevant changes, and repository instructions before editing. Read and apply `write-text` from the active skill catalog or [sibling skill](../write-text/SKILL.md) for entry wording, rather than changelog structure. Reuse it if already loaded.
 

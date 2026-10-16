@@ -3,7 +3,7 @@ name: write-code-in-python
 description: Create or update Python source, tests, and code examples in the user's concise, explicit style. Use when writing Python modules, services, parsers, or automation, including Python changes within a larger task.
 ---
 
-# Write Code in Python
+# How to Write Code in Python
 
 Use this skill to produce Python that is explicit, readable, typed, and operationally simple.
 
@@ -245,7 +245,7 @@ Include a root `Makefile` when creating a Python project. When changing a projec
 
 ## Generic Examples
 
-Read [references/code-examples.md](references/code-examples.md) when concrete examples would help with a new module, service entrypoint, async integration, parser, API route, or test.
+Read the relevant example when concrete guidance would help with a [configured module](reference/example-small-module-with-configuration.md), [startup configuration](reference/example-required-startup-configuration.md), [provider dispatch](reference/example-explicit-provider-dispatch.md), [domain parser](reference/example-domain-parser.md), [async HTTP integration](reference/example-async-http-integration.md), [FastMCP service](reference/example-fastmcp-service-entrypoint.md), [FastAPI lifespan](reference/example-fastapi-lifespan-orchestration.md), [Django Ninja router](reference/example-django-ninja-router.md), [focused transformation](reference/example-focused-transformation.md), [branching loop](reference/example-explicit-loop-for-branching-logic.md), [pytest test](reference/example-pytest-example.md), [avoiding unnecessary abstraction](reference/example-avoid-unnecessary-abstraction.md), or [comments](reference/example-comments.md).
 
 The examples are patterns, not templates to copy mechanically. Adapt names, frameworks, error handling, and configuration to the repository.
 

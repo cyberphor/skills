@@ -3,7 +3,7 @@ name: write-docker-compose
 description: Create or update Docker Compose service configurations. Use when writing Compose application workflows, service connectivity, or startup configuration.
 ---
 
-# Write Docker Compose
+# How to Write Docker Compose
 
 Inspect the Compose files, overrides, profiles, environment inputs, Dockerfiles, and existing task commands before editing. Use Compose v2 through `docker compose`. Preserve service names, persistent data, and the intended development or deployment scope. Do not add the obsolete top-level `version` key.
 

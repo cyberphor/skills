@@ -3,7 +3,7 @@ name: write-bubble-tea-app-in-go
 description: Create or update Go terminal interfaces using Bubble Tea. Use when writing model updates, commands, messages, rendering, and terminal lifecycle behavior.
 ---
 
-# Write Bubble Tea App in Go
+# How to Write Bubble Tea App in Go
 
 Read and apply `write-code-in-go` from the active skill catalog or [sibling skill](../write-code-in-go/SKILL.md) for Go style, package organization, errors, and Makefiles. Reuse it if already loaded.
 

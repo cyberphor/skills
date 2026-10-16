@@ -3,7 +3,7 @@ name: write-django-app-in-python
 description: Create or update Django applications, models, forms, views, and migrations. Use when writing code that depends on Django framework behavior.
 ---
 
-# Write Django App in Python
+# How to Write Django App in Python
 
 Read and apply `write-code-in-python` from the active skill catalog or [sibling skill](../write-code-in-python/SKILL.md) for Python style and tooling. Reuse it if already loaded.
 
@@ -33,7 +33,7 @@ Test the changed request, validation failure, permission boundary, or database b
 
 ## Project Example
 
-Read the [Nostromo memory API example](references/nostromo-memory-example.md) when working on a Django Ninja API with app-level routers, typed schemas, related records, or constrained upserts. It adapts patterns from Kaiju and Squidfall without requiring their architecture for other Django projects.
+Read the [Nostromo memory API example](reference/example-nostromo-memory-api.md) when working on a Django Ninja API with app-level routers, typed schemas, related records, or constrained upserts. It adapts patterns from Kaiju and Squidfall without requiring their architecture for other Django projects.
 
 ## Official References
 

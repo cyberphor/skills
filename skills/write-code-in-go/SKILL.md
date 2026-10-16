@@ -3,7 +3,7 @@ name: write-code-in-go
 description: Create or update Go source, tests, and code examples in the user's preferred style. Use when writing Go programs, packages, or command-line tools, including Go changes within a larger task.
 ---
 
-# Write Code in Go
+# How to Write Code in Go
 
 Write Go code with explicit control flow, focused packages, and consistent conventions.
 
@@ -103,7 +103,7 @@ Include a root `Makefile` when creating a Go project. When changing a project, r
 
 ## Generic Examples
 
-Read [the code examples](references/code-examples.md) when implementing an entrypoint, shared model, helper chain, or HTTP integration. Adapt the examples to the project's behavior and configuration.
+Read the relevant example when implementing a [minimal entrypoint](reference/example-minimal-entrypoint.md), [shared tagged model](reference/example-shared-tagged-model.md), [application orchestration](reference/example-application-orchestration.md), or [standard HTTP integration](reference/example-standard-http-and-focused-helpers.md). Adapt the example to the project's behavior and configuration.
 
 ## Checklist
 

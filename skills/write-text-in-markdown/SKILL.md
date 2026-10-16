@@ -7,6 +7,8 @@ description: Create or update text in Markdown format. Use when asked to write M
 
 ## Headers
 
+Read the [complete Markdown document example](reference/example-complete-markdown-document.md) when a full document example would help.
+
 * Use atx-style headers only. 
 * Do not "close" headers with a trailing `#`. For example, use `## Header` instead of `## Header #`.
 * Do not use header levels greater than 3. 

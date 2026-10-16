@@ -3,7 +3,7 @@ name: write-text-in-vex
 description: Create or update Vulnerability Exploitability eXchange (VEX) statements for exact software artifacts and vulnerabilities. Use when recording exploitability evidence as VEX or integrating those statements with a vulnerability consumer, rather than for plain scan triage or dependency patching.
 ---
 
-# Write Text in VEX
+# How to Write Text in VEX
 
 VEX communicates a vulnerability's status in a specific product. It does not repair software or prove an entire artifact is safe. Inspect the artifact identity, scan finding, advisory, dependency evidence, and intended consumer before choosing a format or status. Prefer OpenVEX when the user and consuming tools do not require another format.
 

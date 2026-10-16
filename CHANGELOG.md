@@ -1,23 +1,33 @@
 # Changelog
 
-## [0.1.6] - 2026-10-14
+## [0.1.7] - 2026-10-16
 ### Added
-- Added `write-dockerfile`, `write-docker-compose`, `write-text-in-vex`, and `resolve-kubernetes-workload-failure` skills
-- Added `write-django-app-in-python` and `write-bubble-tea-app-in-go` skills
-- Added the `write-github-actions-workflow` skill
-- Added a README graph of skill relationships and a table linking every skill
-- Added the `resolve-github-workflow-failure` skill
-- Added a complete Markdown example to the `write-text-in-markdown` skill
+* Added the `write-agent-skill` and `write-text-in-markdown` skills, including a complete Markdown document example
+* Added a CI workflow that validates every skill on pushes, manual runs, and a daily schedule, with its status shown in the README
 
 ### Updated
-- Updated all skills to use consistent Markdown headings, lists, numbering, labels, and inline links
-- Renamed the `writing-style` skill to `write-text` and expanded its guidance for prose paragraphs, related statements, list introductions, and section structure
-- Updated `write-django-app-in-python` with the Nostromo memory API example, adapting Django Ninja patterns from Kaiju and Squidfall with owner-scoped queries, constrained upserts, and readable source links
+* Normalized all skill names under the `read-*`, `write-*`, and `resolve-*` prefixes
+* Updated every skill to follow the current authoring conventions for how-to titles, frontmatter, compatibility requirements, and Markdown structure
+* Split and renamed bundled examples into individual `reference/example-*` files
+* Simplified the README to focus on the repository description and CI status
+
+### Removed
+* Removed the README skill table and relationship graph
+
+## [0.1.6] - 2026-10-14
+### Added
+- Added `dockerfiles`, `docker-compose`, `vex`, and `troubleshooting-kubernetes` skills
+- Added `python-django` and `go-bubbletea` skills
+- Added the `github-actions` skill
+- Added a README graph of skill relationships and a table linking every skill
+- Added the `resolve-github-workflow-failure` skill
+
+### Updated
+- Updated `python-django` with the Nostromo memory API example, adapting Django Ninja patterns from Kaiju and Squidfall with owner-scoped queries, constrained upserts, and readable source links
 - Updated the publish workflow to install uv and validate skills before packaging and publishing
 - Updated the Makefile to validate skills with `skills-ref` through uv before packaging
 - Updated `skill-writing` with Agent Skills format, authoring, description evaluation, pop culture example naming, and readable source-link guidance that preserves attribution, and audited all skills to clarify discovery, shared guidance, and verification
-- Updated the `write-code-in-go` and `write-makefile` skills to prefer Go install builds and omit Go run targets by default, and the `write-code-in-python` and `write-makefile` skills to prefer uv for Python workflows
-- Normalized all skill names under the `read-*`, `write-*`, and `resolve-*` prefixes, with resolve skills requiring remediation options and explicit approval before mutation
+- Updated the `go` and `makefiles` skills to prefer Go install builds and omit Go run targets by default, and the `python` and `makefiles` skills to prefer uv for Python workflows
 
 ### Removed
 - Removed the `skill-writing` skill

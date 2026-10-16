@@ -3,7 +3,7 @@ name: write-text
 description: Create or update explanatory prose, documentation, READMEs, how-to guides, and skill instructions in the user's plain, practical voice. Use for writing style and explanation choices, not code architecture.
 ---
 
-# Write Text
+# How to Write Text
 
 Write explanations that help the reader understand a concept and use it. Keep the language direct and give enough detail to explain what an action does and why it matters. Preserve the requested audience, format, and scope.
 

@@ -1,98 +1,7 @@
-# Go Code Examples
+# Standard HTTP and Focused Helpers
 
 Use these generic examples for the preferred style. The files below form one small module named `example.com/app`. Adapt the endpoint, models, and behavior to the project. They illustrate an application entrypoint and HTTP integration, rather than command-line flag handling.
 
-## Minimal Entrypoint
-
-Keep process exit handling in `main.go`. Delegate application work to `cmd`.
-
-**main.go**
-
-```go
-package main
-
-import (
-	"context"
-	"os"
-
-	"example.com/app/cmd"
-)
-
-func main() {
-	var (
-		err error
-	)
-
-	err = cmd.Execute(context.Background())
-	if err != nil {
-		os.Exit(1)
-	}
-}
-```
-
-## Shared Tagged Model
-
-Keep struct definitions in `models`. Give exported types a doc comment and tag every field.
-
-**models/record.go**
-
-```go
-package models
-
-// Record describes a named resource.
-type Record struct {
-	ID   int    `mapstructure:"id" json:"id" yaml:"id"`
-	Name string `mapstructure:"name" json:"name" yaml:"name"`
-}
-```
-
-## Application Orchestration
-
-Keep configuration validation and orchestration in the application package. Declare local variables once, alphabetically, and return each error immediately without wrapping it.
-
-**cmd/cmd.go**
-
-```go
-package cmd
-
-import (
-	"context"
-	"encoding/json"
-	"errors"
-	"os"
-
-	"example.com/app/models"
-	"example.com/app/records"
-)
-
-// Execute fetches records from the configured endpoint and writes them as JSON.
-func Execute(requestContext context.Context) error {
-	var (
-		endpoint     string
-		err          error
-		foundRecords []models.Record
-	)
-
-	endpoint = os.Getenv("RECORDS_ENDPOINT")
-	if endpoint == "" {
-		return errors.New("records endpoint is not configured")
-	}
-
-	foundRecords, err = records.Fetch(requestContext, endpoint)
-	if err != nil {
-		return err
-	}
-
-	err = json.NewEncoder(os.Stdout).Encode(foundRecords)
-	if err != nil {
-		return err
-	}
-
-	return nil
-}
-```
-
-## Standard HTTP and Focused Helpers
 
 Use `net/http` and `net/url` directly. Separate URL construction, response validation, decoding, and cleanup into focused helpers. Check every returned error and close the response body on both successful and failed reads. Preserve a single existing error unchanged. Use `errors.Join` only when both the operation and cleanup fail.
 
@@ -220,3 +129,4 @@ func closeResponse(response *http.Response, cause error) error {
 ```
 
 These examples use Go 1.20 or later for `errors.Join`. Reuse a project-managed HTTP client when its lifecycle requires that. Command-line programs should use the Cobra group and leaf structure described in the main skill.
+

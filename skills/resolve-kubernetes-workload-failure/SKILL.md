@@ -1,9 +1,10 @@
 ---
 name: resolve-kubernetes-workload-failure
-description: Investigate Kubernetes workload and service failures, present remediation options, and execute the selected fix only after approval. Use for unhealthy Pods, rollout failures, connectivity, storage, and access problems.
+description: Read Kubernetes workload and service failure evidence and update affected resources with the selected fix only after approval. Use for unhealthy Pods, rollout failures, connectivity, storage, and access problems.
+compatibility: Requires kubectl access and permission to read the affected Kubernetes cluster resources, plus permission to update them for an approved remediation.
 ---
 
-# Resolve Kubernetes Workload Failure
+# How to Resolve Kubernetes Workload Failure
 
 Verify the intended cluster context and namespace before querying resources. Inspect `kubectl config current-context` and the relevant context configuration, then use explicit context and namespace options for cluster commands. Establish the failing workload, symptom, and time window. Preserve the user's operational scope.
 
