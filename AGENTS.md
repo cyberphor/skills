@@ -1,3 +1,8 @@
-# Repository Instructions
+# `skills`
+Agent skills for approaching software-related problems like how Victor Fernandez III would. 
 
-Maintain `CHANGELOG.md` when making actual changes to this repository. Use the `changelog` skill and update the current working or user-specified release section. Do not invent a new release version, date, or link. Skip changelog updates for read-only work and work performed only in other repositories.
+## Contributing 
+
+* Update `CHANGELOG.md` when making changes to any of the skills in this repository.  
+* Append changes you've made to the latest release in `CHANGELOG.md` unless told otherwise. 
+* Do not add read-only activity or changes made outside this repository to `CHANGELOG.md`. 

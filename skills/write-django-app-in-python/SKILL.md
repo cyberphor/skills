@@ -1,11 +1,11 @@
 ---
-name: python-django
-description: Create, revise, or troubleshoot Django applications, models, forms, views, and migrations. Use for changes that depend on Django framework behavior.
+name: write-django-app-in-python
+description: Create or update Django applications, models, forms, views, and migrations. Use when writing code that depends on Django framework behavior.
 ---
 
-# Python Django
+# Write Django App in Python
 
-Read and apply `python` from the active skill catalog or [sibling skill](../python/SKILL.md) for Python style and tooling. Reuse it if already loaded.
+Read and apply `write-code-in-python` from the active skill catalog or [sibling skill](../write-code-in-python/SKILL.md) for Python style and tooling. Reuse it if already loaded.
 
 Inspect the installed Django version, settings, app configuration, relevant models, URL patterns, views, templates, migrations, and tests before editing. Use documentation for that version. Preserve the project's app boundaries, database backend, authentication model, and deployment configuration.
 
@@ -37,7 +37,7 @@ Read the [Nostromo memory API example](references/nostromo-memory-example.md) wh
 
 ## Official References
 
-- [Django documentation](https://docs.djangoproject.com/) for the project's installed version.
-- [Form validation](https://docs.djangoproject.com/en/6.0/ref/forms/validation/) and [model instance validation](https://docs.djangoproject.com/en/6.0/ref/models/instances/#validating-objects) for validation boundaries.
-- [Transactions](https://docs.djangoproject.com/en/6.0/topics/db/transactions/) and [migrations](https://docs.djangoproject.com/en/6.0/topics/migrations/) for database changes.
-- [Management commands](https://docs.djangoproject.com/en/6.0/ref/django-admin/) and [testing](https://docs.djangoproject.com/en/6.0/topics/testing/overview/) for verification.
+* [Django documentation](https://docs.djangoproject.com/) for the project's installed version.
+* [Form validation](https://docs.djangoproject.com/en/6.0/ref/forms/validation/) and [model instance validation](https://docs.djangoproject.com/en/6.0/ref/models/instances/#validating-objects) for validation boundaries.
+* [Transactions](https://docs.djangoproject.com/en/6.0/topics/db/transactions/) and [migrations](https://docs.djangoproject.com/en/6.0/topics/migrations/) for database changes.
+* [Management commands](https://docs.djangoproject.com/en/6.0/ref/django-admin/) and [testing](https://docs.djangoproject.com/en/6.0/topics/testing/overview/) for verification.

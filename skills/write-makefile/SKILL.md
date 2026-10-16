@@ -1,13 +1,13 @@
 ---
-name: makefiles
-description: Create, revise, or review Makefiles in our preferred style. Use when adding project task automation, changing build or test workflows, or editing Make targets and recipes.
+name: write-makefile
+description: Create or update Makefiles in the preferred style. Use when writing project task automation, build or test workflows, targets, and recipes.
 ---
 
-# Makefiles
+# Write Makefile
 
 Use Makefiles as a readable entrypoint for routine project tasks. Inspect the existing Makefile, project configuration, and invoked tools before editing. Align targets being changed with these preferences, including small directly related changes needed for consistency. Established inconsistent style alone does not override these preferences. Respect explicit user and repository instructions and configuration. Preserve target interfaces, required tooling, and behavior unless the relevant preference or task calls for a change. Avoid unrelated project-wide target renames, restructuring, or reformatting.
 
-Read and apply `writing-style` from the active skill catalog or [sibling skill](../writing-style/SKILL.md) when writing comments or task descriptions. Reuse it if already loaded.
+Read and apply `write-text` from the active skill catalog or [sibling skill](../write-text/SKILL.md) when writing comments or task descriptions. Reuse it if already loaded.
 
 ## Layout
 
@@ -43,10 +43,10 @@ Use uppercase names with underscores. Centralize repeated paths, images, service
 
 Invoke well-known tools by their literal names, such as `go` and `gofmt`. Do not add configurable command variables such as `GO` or `GOFMT` unless the project explicitly requires an alternate executable or wrapper.
 
-- Use `?=` for caller-overridable defaults and `:=` for fixed or derived values that should expand once. Command-line assignments still override ordinary Makefile assignments. Avoid `override` without a concrete requirement.
-- Use `$(NAME)` for Make variables. Quote path arguments and individual values in recipes.
-- Export settings needed by subprocesses, such as `export COMPOSE_BAKE := true` or a normalized workspace path. A Make assignment alone does not reliably expose a value to tools.
-- Use `include` for required files containing valid Make syntax and `-include` for intentional optional files. Dotenv files are not necessarily valid Make syntax. Prefer the consuming tool's `--env-file` option. Never echo secret values.
+* Use `?=` for caller-overridable defaults and `:=` for fixed or derived values that should expand once. Command-line assignments still override ordinary Makefile assignments. Avoid `override` without a concrete requirement.
+* Use `$(NAME)` for Make variables. Quote path arguments and individual values in recipes.
+* Export settings needed by subprocesses, such as `export COMPOSE_BAKE := true` or a normalized workspace path. A Make assignment alone does not reliably expose a value to tools.
+* Use `include` for required files containing valid Make syntax and `-include` for intentional optional files. Dotenv files are not necessarily valid Make syntax. Prefer the consuming tool's `--env-file` option. Never echo secret values.
 
 Keep shell work out of parse-time `$(shell ...)` where practical. It can run for unrelated targets and dry runs. Validate failures explicitly when deriving configuration from external tools.
 

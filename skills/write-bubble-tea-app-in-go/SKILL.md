@@ -1,11 +1,11 @@
 ---
-name: go-bubbletea
-description: Create, revise, or troubleshoot Go terminal interfaces using Bubble Tea. Use for model updates, commands, messages, rendering, and terminal lifecycle behavior.
+name: write-bubble-tea-app-in-go
+description: Create or update Go terminal interfaces using Bubble Tea. Use when writing model updates, commands, messages, rendering, and terminal lifecycle behavior.
 ---
 
-# Go Bubble Tea
+# Write Bubble Tea App in Go
 
-Read and apply `go` from the active skill catalog or [sibling skill](../go/SKILL.md) for Go style, package organization, errors, and Makefiles. Reuse it if already loaded.
+Read and apply `write-code-in-go` from the active skill catalog or [sibling skill](../write-code-in-go/SKILL.md) for Go style, package organization, errors, and Makefiles. Reuse it if already loaded.
 
 Inspect `go.mod`, imports, existing models, component dependencies, and tests before selecting APIs. Preserve the installed major version unless migration is requested. Check Bubbles and Lip Gloss compatibility when using those libraries.
 
@@ -44,7 +44,7 @@ For an interactive change, verify focus, resizing, the relevant loading or error
 
 ## Official References
 
-- [Bubble Tea](https://github.com/charmbracelet/bubbletea) for current architecture and examples.
-- [Bubble Tea v1 reference](https://github.com/charmbracelet/bubbletea/tree/v1.3.10) for the v1 API family. Consult the project's exact version when needed.
-- [v2 upgrade guide](https://github.com/charmbracelet/bubbletea/blob/main/UPGRADE_GUIDE_V2.md) for import, view, input, and terminal API differences.
-- [Commands tutorial](https://github.com/charmbracelet/bubbletea/tree/main/tutorials/commands) for command and message separation.
+* [Bubble Tea](https://github.com/charmbracelet/bubbletea) for current architecture and examples.
+* [Bubble Tea v1 reference](https://github.com/charmbracelet/bubbletea/tree/v1.3.10) for the v1 API family. Consult the project's exact version when needed.
+* [v2 upgrade guide](https://github.com/charmbracelet/bubbletea/blob/main/UPGRADE_GUIDE_V2.md) for import, view, input, and terminal API differences.
+* [Commands tutorial](https://github.com/charmbracelet/bubbletea/tree/main/tutorials/commands) for command and message separation.

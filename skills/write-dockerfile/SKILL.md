@@ -1,13 +1,13 @@
 ---
-name: dockerfiles
-description: Create, revise, or review Dockerfiles and their build contexts. Use for container image builds, runtime packaging, and Dockerfile failures.
+name: write-dockerfile
+description: Create or update Dockerfiles and their build contexts. Use when writing container image builds and runtime packaging.
 ---
 
-# Dockerfiles
+# Write Dockerfile
 
 Inspect the existing Dockerfile, build context, dependency manifests, image consumers, and runtime requirements before editing. Preserve required entrypoints, ports, architecture support, and artifact paths. Apply changes to the requested image rather than imposing a new deployment workflow.
 
-Read and apply `writing-style` from the active skill catalog or [sibling skill](../writing-style/SKILL.md) when drafting comments or explanations. Reuse it if already loaded.
+Read and apply `write-text` from the active skill catalog or [sibling skill](../write-text/SKILL.md) when drafting comments or explanations. Reuse it if already loaded.
 
 ## Image Design
 
@@ -31,6 +31,6 @@ Report the image changes and checks actually completed. If Docker or required de
 
 ## Official References
 
-- [Docker build best practices](https://docs.docker.com/build/building/best-practices/) for image design, caching, and context exclusions.
-- [Multi-stage builds](https://docs.docker.com/build/building/multi-stage/) for stage selection and artifact copying.
-- [Build secrets](https://docs.docker.com/build/building/secrets/) for credential mounts.
+* [Docker build best practices](https://docs.docker.com/build/building/best-practices/) for image design, caching, and context exclusions.
+* [Multi-stage builds](https://docs.docker.com/build/building/multi-stage/) for stage selection and artifact copying.
+* [Build secrets](https://docs.docker.com/build/building/secrets/) for credential mounts.

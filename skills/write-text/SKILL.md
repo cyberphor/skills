@@ -1,13 +1,15 @@
 ---
-name: writing-style
-description: Draft or revise explanatory prose, documentation, READMEs, how-to guides, and skill instructions in the user's plain, practical voice. Use for writing style and explanation choices, not code architecture.
+name: write-text
+description: Create or update explanatory prose, documentation, READMEs, how-to guides, and skill instructions in the user's plain, practical voice. Use for writing style and explanation choices, not code architecture.
 ---
 
-# Writing Style
+# Write Text
 
 Write explanations that help the reader understand a concept and use it. Keep the language direct and give enough detail to explain what an action does and why it matters. Preserve the requested audience, format, and scope.
 
 ## Voice
+
+Use a direct, practical, and approachable voice. Apply these qualities consistently while preserving the reader's expected level of technical detail.
 
 **Direct.** Use matter-of-fact sentences and concrete verbs. Say what something is or what the reader should do. Remove promotional language, personal storytelling, and introductions that delay the explanation.
 
@@ -18,6 +20,8 @@ Avoid semicolons in prose. Use separate sentences or natural conjunctions. Prese
 **Approachable.** Use “you” and “your” when addressing the reader. Give instructions with verbs such as Create, Activate, Install, or Check. Explain unfamiliar concepts without assuming expertise or talking down to the reader.
 
 ## Explanations
+
+Build explanations around the reader's need to understand and act. Define the subject, describe its behavior, and connect it to a useful consequence.
 
 **Definition.** Start a concept guide with a short definition and its purpose: “A retry repeats a failed operation. This helps recover from a temporary connection failure.”
 
@@ -31,13 +35,23 @@ Avoid semicolons in prose. Use separate sentences or natural conjunctions. Prese
 
 Use H1 for the title and H2 for sections. Use bold labels for deeper subdivisions instead of H3 or smaller headings. Choose sections that fit the subject. Do not impose the same layout on every document.
 
-Group conceptual explanations under short bold labels. Use parallel bullets for related properties, questions, or choices. Organize troubleshooting by the task or symptom the reader recognizes. Put inline names and language-tagged code blocks next to the explanation they support.
+Begin every section and subsection with an introductory prose paragraph of at least two complete sentences. Place this paragraph before any list, table, code block, or similar structured content, and never place a list immediately after a heading or bold label.
+
+Every prose paragraph must contain at least two complete sentences. Do not treat list items, table cells, headings, labels, code, or other structured content as prose paragraphs.
+
+End prose sentences with a period, question mark, or exclamation point instead of a colon. Introduce a list with a complete sentence that ends with a period.
+
+Convert consecutive short statements about the same subject into an ordered or unordered list instead of leaving them as separate lines of text. Group conceptual explanations under short bold labels, and use parallel bullets for related properties, questions, or choices.
+
+Organize troubleshooting by the task or symptom the reader recognizes. Put inline names and language-tagged code blocks next to the explanation they support.
 
 ## Procedures
 
 Use numbered bold step labels when order matters. Start each step with an action and place its command or example directly after it. Number steps sequentially within each procedure.
 
 **Step 1.** Create a directory for the output.
+
+This directory keeps generated files separate from the source. Create it before running commands that write output.
 
 ```sh
 mkdir output

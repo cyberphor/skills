@@ -1,9 +1,9 @@
 ---
-name: go
-description: Write, revise, or review Go source, tests, and code examples in the user's preferred style. Use when implementing or changing Go programs, packages, or command-line tools, including Go changes within a larger task.
+name: write-code-in-go
+description: Create or update Go source, tests, and code examples in the user's preferred style. Use when writing Go programs, packages, or command-line tools, including Go changes within a larger task.
 ---
 
-# Go Writing Style
+# Write Code in Go
 
 Write Go code with explicit control flow, focused packages, and consistent conventions.
 
@@ -13,7 +13,7 @@ Inspect relevant code and project configuration before editing. Apply these pref
 
 ## Prose
 
-Read and apply `writing-style` from the active skill catalog or [sibling skill](../writing-style/SKILL.md) when drafting or revising READMEs, documentation, command help, or explanatory comments. Reuse it if already loaded. Preserve Go doc-comment syntax and the code conventions below.
+Read and apply `write-text` from the active skill catalog or [sibling skill](../write-text/SKILL.md) when drafting or revising READMEs, documentation, command help, or explanatory comments. Reuse it if already loaded. Preserve Go doc-comment syntax and the code conventions below.
 
 ## Package Organization
 
@@ -75,10 +75,10 @@ Structure one subpackage per command group, each with a `cmd.go` declaring the p
 
 Per leaf command file:
 
-- A package-level `var (...)` block for flag-backed variables, named `<resource><FlagName>` in camelCase.
-- A second `var (...)` block declaring the `*cobra.Command` (`Use`, `Short`, `RunE`).
-- The `RunE` function named after the command (e.g. `getSystems`).
-- An `init()` that registers only that command's flags — subcommand registration belongs in the group's `cmd.go`.
+* A package-level `var (...)` block for flag-backed variables, named `<resource><FlagName>` in camelCase.
+* A second `var (...)` block declaring the `*cobra.Command` (`Use`, `Short`, `RunE`).
+* The `RunE` function named after the command (e.g. `getSystems`).
+* An `init()` that registers only that command's flags — subcommand registration belongs in the group's `cmd.go`.
 
 ## Structs
 
@@ -97,9 +97,9 @@ Favor the standard library, with Cobra preferred for command-line tools. Use `ne
 
 ## Makefiles
 
-Read and apply `makefiles` from the active skill catalog or [sibling skill](../makefiles/SKILL.md) when creating or modifying a Makefile. Reuse it if already loaded.
+Read and apply `write-makefile` from the active skill catalog or [sibling skill](../write-makefile/SKILL.md) when creating or modifying a Makefile. Reuse it if already loaded.
 
-Include a root `Makefile` when creating a Go project. When changing a project, reuse its existing Makefile and align affected tasks with the `makefiles` skill. Keep the `build` target name and prefer `go install -ldflags="-s -w" .` instead of `go build` for programs whose main package is in the module root. Use the actual main-package path when it lives elsewhere. Preserve required linker flags and artifact output contracts when installation would not satisfy them. Omit `run` targets and `go run` recipes by default. Expose applicable routine tasks such as `build`, `test`, `check`, and `format` using the repository's required tools. Include only tasks that apply to the project. Standalone snippets do not require a Makefile.
+Include a root `Makefile` when creating a Go project. When changing a project, reuse its existing Makefile and align affected tasks with the `write-makefile` skill. Keep the `build` target name and prefer `go install -ldflags="-s -w" .` instead of `go build` for programs whose main package is in the module root. Use the actual main-package path when it lives elsewhere. Preserve required linker flags and artifact output contracts when installation would not satisfy them. Omit `run` targets and `go run` recipes by default. Expose applicable routine tasks such as `build`, `test`, `check`, and `format` using the repository's required tools. Include only tasks that apply to the project. Standalone snippets do not require a Makefile.
 
 ## Generic Examples
 
@@ -109,9 +109,9 @@ Read [the code examples](references/code-examples.md) when implementing an entry
 
 Run `gofmt` on changed Go files and the repository's relevant checks and tests. Use `go vet` and targeted `go test` when no project-specific check replaces them. Report checks actually completed and any environment limitations.
 
-- Every local variable is declared in one alphabetical `var (...)` block at the top of its function, with no inline `:=` declarations.
-- No error silently dropped or checked more than one call late.
-- Existing errors are returned or aggregated unchanged.
-- No `else` following a block that ends in `return`.
-- Every exported identifier has a doc comment.
-- Blank lines separate logical steps — no dense walls of statements.
+* Every local variable is declared in one alphabetical `var (...)` block at the top of its function, with no inline `:=` declarations.
+* No error silently dropped or checked more than one call late.
+* Existing errors are returned or aggregated unchanged.
+* No `else` following a block that ends in `return`.
+* Every exported identifier has a doc comment.
+* Blank lines separate logical steps — no dense walls of statements.

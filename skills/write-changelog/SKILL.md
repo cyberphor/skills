@@ -1,11 +1,11 @@
 ---
-name: changelog
-description: Create or maintain repository CHANGELOG.md files in the preferred style. Use when asked to edit a changelog or when making repository changes that require a changelog entry.
+name: write-changelog
+description: Create or update repository CHANGELOG.md files in the preferred style. Use when asked to edit a changelog or when repository changes require a changelog entry.
 ---
 
-# Changelog
+# Write Changelog
 
-Read the existing changelog, relevant changes, and repository instructions before editing. Read and apply `writing-style` from the active skill catalog or [sibling skill](../writing-style/SKILL.md) for entry wording, rather than changelog structure. Reuse it if already loaded.
+Read the existing changelog, relevant changes, and repository instructions before editing. Read and apply `write-text` from the active skill catalog or [sibling skill](../write-text/SKILL.md) for entry wording, rather than changelog structure. Reuse it if already loaded.
 
 ## Format
 

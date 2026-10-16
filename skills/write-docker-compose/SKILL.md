@@ -1,13 +1,13 @@
 ---
-name: docker-compose
-description: Create, revise, or troubleshoot Docker Compose service configurations. Use for local or existing Compose application workflows, service connectivity, and startup failures.
+name: write-docker-compose
+description: Create or update Docker Compose service configurations. Use when writing Compose application workflows, service connectivity, or startup configuration.
 ---
 
-# Docker Compose
+# Write Docker Compose
 
 Inspect the Compose files, overrides, profiles, environment inputs, Dockerfiles, and existing task commands before editing. Use Compose v2 through `docker compose`. Preserve service names, persistent data, and the intended development or deployment scope. Do not add the obsolete top-level `version` key.
 
-Read and apply `writing-style` from the active skill catalog or [sibling skill](../writing-style/SKILL.md) when drafting comments or explanations. Reuse it if already loaded. Resolve `makefiles` through the catalog or [sibling skill](../makefiles/SKILL.md) when changing Makefile tasks.
+Read and apply `write-text` from the active skill catalog or [sibling skill](../write-text/SKILL.md) when drafting comments or explanations. Reuse it if already loaded. Resolve `write-makefile` through the catalog or [sibling skill](../write-makefile/SKILL.md) when changing Makefile tasks.
 
 ## Service Configuration
 
@@ -29,7 +29,7 @@ Do not treat configuration validation as a runtime test. Avoid `down --volumes`,
 
 ## Official References
 
-- [Compose file reference](https://docs.docker.com/reference/compose-file/) for current service and resource settings.
-- [Startup and shutdown order](https://docs.docker.com/compose/how-tos/startup-order/) for readiness conditions.
-- [Compose secrets](https://docs.docker.com/compose/how-tos/use-secrets/) for service credential access.
-- [docker compose config](https://docs.docker.com/reference/cli/docker/compose/config/) for effective configuration validation.
+* [Compose file reference](https://docs.docker.com/reference/compose-file/) for current service and resource settings.
+* [Startup and shutdown order](https://docs.docker.com/compose/how-tos/startup-order/) for readiness conditions.
+* [Compose secrets](https://docs.docker.com/compose/how-tos/use-secrets/) for service credential access.
+* [docker compose config](https://docs.docker.com/reference/cli/docker/compose/config/) for effective configuration validation.

@@ -1,40 +1,23 @@
 # `skills`
-Documentation AI agents can use to approach software-related problems like how I would. 
+Agent skills for approaching software-related problems like how Victor Fernandez III would. 
 
 ## Skills
 
 | Skill | Purpose |
 | --- | --- |
-| [changelog](skills/changelog/SKILL.md) | Repository release notes |
-| [docker-compose](skills/docker-compose/SKILL.md) | Compose services, connectivity, and startup |
-| [dockerfiles](skills/dockerfiles/SKILL.md) | Container image builds and runtime packaging |
-| [github-actions](skills/github-actions/SKILL.md) | Workflows, reusable actions, and failed jobs |
-| [go](skills/go/SKILL.md) | Go source, tests, and examples |
-| [go-bubbletea](skills/go-bubbletea/SKILL.md) | Go terminal interfaces with Bubble Tea |
-| [makefiles](skills/makefiles/SKILL.md) | Project tasks, builds, and checks |
-| [python](skills/python/SKILL.md) | Python source, tests, and examples |
-| [python-django](skills/python-django/SKILL.md) | Django applications and framework behavior |
-| [skill-writing](skills/skill-writing/SKILL.md) | Reusable agent skill authoring and review |
-| [troubleshooting-kubernetes](skills/troubleshooting-kubernetes/SKILL.md) | Kubernetes workload and service failures |
-| [vex](skills/vex/SKILL.md) | Vulnerability Exploitability eXchange assessments |
-| [writing-style](skills/writing-style/SKILL.md) | Plain, practical prose and documentation |
-
-## Skill Map
-
-Arrows point from a skill to the skills it influences.
-
-```mermaid
-flowchart LR
-    writing_style[writing-style] --> authoring[skill-writing]
-    writing_style --> changelog[changelog]
-    writing_style --> dockerfiles[dockerfiles]
-    writing_style --> compose[docker-compose]
-    writing_style --> vex[vex]
-    writing_style --> actions[respond-to-github-actions-workflow-failure]
-    writing_style --> kubernetes[troubleshooting-kubernetes]
-    writing_style --> makefiles[makefiles]
-    writing_style --> python[python]
-    writing_style --> go[go]
-    python --> django[python-django]
-    go --> bubbletea[go-bubbletea]
-```
+| [read-gitlab-work-items](skills/read-gitlab-work-items/SKILL.md) | GitLab Work Item retrieval, analysis, and summaries |
+| [resolve-github-workflow-failure](skills/resolve-github-workflow-failure/SKILL.md) | GitHub Actions failure investigation and approved remediation |
+| [resolve-kubernetes-workload-failure](skills/resolve-kubernetes-workload-failure/SKILL.md) | Kubernetes workload failure investigation and approved recovery |
+| [resolve-uds-core-deployment-failure](skills/resolve-uds-core-deployment-failure/SKILL.md) | UDS Core deployment failure investigation and approved recovery |
+| [write-bubble-tea-app-in-go](skills/write-bubble-tea-app-in-go/SKILL.md) | Go terminal interfaces using Bubble Tea |
+| [write-changelog](skills/write-changelog/SKILL.md) | Repository release notes |
+| [write-code-in-go](skills/write-code-in-go/SKILL.md) | Go source, tests, and examples |
+| [write-code-in-python](skills/write-code-in-python/SKILL.md) | Python source, tests, and examples |
+| [write-django-app-in-python](skills/write-django-app-in-python/SKILL.md) | Django applications and framework behavior |
+| [write-docker-compose](skills/write-docker-compose/SKILL.md) | Docker Compose services and connectivity |
+| [write-dockerfile](skills/write-dockerfile/SKILL.md) | Container image builds and runtime packaging |
+| [write-github-actions-workflow](skills/write-github-actions-workflow/SKILL.md) | GitHub Actions workflows and reusable actions |
+| [write-makefile](skills/write-makefile/SKILL.md) | Project tasks, builds, and checks |
+| [write-text](skills/write-text/SKILL.md) | Plain, practical prose and documentation |
+| [write-text-in-markdown](skills/write-text-in-markdown/SKILL.md) | Text formatted as Markdown |
+| [write-text-in-vex](skills/write-text-in-vex/SKILL.md) | Vulnerability Exploitability eXchange statements |

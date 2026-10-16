@@ -1,8 +1,10 @@
 ---
-name: troubleshoot-uds-core-k3s
-description: Diagnoses and recovers local k3s and k3d UDS Core failures that block application deployment. Use for failures involving namespace termination, admission, Pepr, Istio, host limits, package reconciliation, and Keycloak.
+name: resolve-uds-core-deployment-failure
+description: Investigate local k3s and k3d UDS Core deployment failures, present remediation options, and execute the selected recovery only after approval. Use for failures involving namespace termination, admission, Pepr, Istio, host limits, package reconciliation, and Keycloak.
 compatibility: Requires kubectl access to the affected local k3s or k3d cluster.
 ---
+
+# Resolve UDS Core Deployment Failure
 
 ## Prerequisites
 
@@ -14,7 +16,7 @@ Before collecting evidence, require the user to identify:
 
 Check that `kubectl` is installed and that the named context exists. Stop and report what is missing if either check fails.
 
-Treat diagnostic access as read-only. Do not restart workloads, delete resources, remove packages, change host settings, or edit finalizers without explicit authorization. Explain the expected impact and recovery path before requesting authorization.
+Treat diagnostic access as read-only. After identifying the cause, present concrete remediation options with their expected effect, risks, blast radius, rollback path, and verification approach. Ask the user to select an option and explicitly approve execution. Stop before restarting workloads, deleting resources, removing packages, changing host settings, editing finalizers, or making any other recovery mutation. A request to investigate or resolve the failure does not itself approve a recovery mutation.
 
 ## How to Troubleshoot k3s UDS Core
 
@@ -84,13 +86,13 @@ Raising a sysctl is a host mutation. Before doing so, show the current value, pr
 
 Do not interpret a running application Pod as proof that package reconciliation succeeded. Record whether workloads, admission, identity configuration, and the Package readiness condition are each healthy.
 
-9. **Choose the smallest authorized recovery.** Fix the earliest failed dependency, then allow dependents to recover. Examples include restoring an APIService backend, correcting a Service selector, raising an exhausted host limit, or restarting one unhealthy DaemonSet or Deployment after its root cause is addressed.
+9. **Propose recovery options and wait for approval.** Present concrete options for the earliest failed dependency, including the expected effect, risks, blast radius, rollback path, and verification approach. Recommend the smallest recovery. Examples include restoring an APIService backend, correcting a Service selector, raising an exhausted host limit, or restarting one unhealthy DaemonSet or Deployment after its root cause is addressed. Ask the user to select an option and explicitly approve it. Execute only the selected option after approval.
 
 A cluster restart is not a substitute for root-cause analysis. Recommend it only for a disposable local cluster when evidence indicates stale runtime or networking state, the underlying cause has been corrected, and the user authorizes the interruption. Explain what state persists across the restart and what must be rechecked.
 
 10. **Retry deployment only after prerequisites are healthy.** If package cleanup or namespace deletion is required, request authorization, use the deployment tool appropriate to the package, and wait with a finite timeout before redeploying. Do not begin a new deployment into a namespace that is still terminating.
 
-### Verification
+**Verification**
 
 1. Confirm the repaired UDS Core Pods and controllers are ready.
 2. Confirm the affected Service has ready EndpointSlice addresses.

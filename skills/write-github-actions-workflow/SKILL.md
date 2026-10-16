@@ -1,13 +1,13 @@
 ---
-name: github-actions
-description: Create, revise, review, or troubleshoot GitHub Actions workflows and reusable actions. Use when automating repository checks, builds, releases, or deployments in .github/workflows, or diagnosing their failed or skipped jobs.
+name: write-github-actions-workflow
+description: Create or update GitHub Actions workflows and reusable actions. Use when writing repository checks, builds, releases, or deployments in .github/workflows.
 ---
 
-# GitHub Actions
+# Write GitHub Actions Workflow
 
 Inspect existing workflows, action metadata, reusable configurations, repository instructions, and the commands they invoke. Establish the intended event, checked-out revision, runner, job dependencies, and required tools before editing. Preserve existing release and deployment scope.
 
-Read and apply `writing-style` from the active skill catalog or [sibling skill](../writing-style/SKILL.md) when drafting comments or explanations. Reuse it if already loaded. Apply `makefiles`, `go`, or `python` through the catalog or [Makefiles](../makefiles/SKILL.md), [Go](../go/SKILL.md), or [Python](../python/SKILL.md) skills when editing those files. Workflow commands should preserve the project's required artifacts and tooling.
+Read and apply `write-text` from the active skill catalog or [sibling skill](../write-text/SKILL.md) when drafting comments or explanations. Reuse it if already loaded. Apply `write-makefile`, `write-code-in-go`, or `write-code-in-python` through the catalog or [Write Makefile](../write-makefile/SKILL.md), [Write Code in Go](../write-code-in-go/SKILL.md), or [Write Code in Python](../write-code-in-python/SKILL.md) skills when editing those files. Workflow commands should preserve the project's required artifacts and tooling.
 
 ## Events and Revisions
 
@@ -47,8 +47,8 @@ Report completed static and local checks separately from GitHub runtime results.
 
 ## Official References
 
-- [Events that trigger workflows](https://docs.github.com/en/actions/reference/workflows-and-actions/events-that-trigger-workflows) when choosing filters or resolving event refs and payloads.
-- [Workflow syntax](https://docs.github.com/en/actions/reference/workflows-and-actions/workflow-syntax) when changing jobs, dependencies, outputs, reusable calls, or concurrency.
-- [Secure use reference](https://docs.github.com/en/actions/reference/security/secure-use) when reviewing action pinning, token privileges, or untrusted input.
-- [Dependency caching](https://docs.github.com/en/actions/reference/workflows-and-actions/dependency-caching) when changing keys, restore behavior, or cache access.
-- [OpenID Connect](https://docs.github.com/en/actions/concepts/security/openid-connect) when configuring short-lived cloud authentication and trust.
+* [Events that trigger workflows](https://docs.github.com/en/actions/reference/workflows-and-actions/events-that-trigger-workflows) when choosing filters or resolving event refs and payloads.
+* [Workflow syntax](https://docs.github.com/en/actions/reference/workflows-and-actions/workflow-syntax) when changing jobs, dependencies, outputs, reusable calls, or concurrency.
+* [Secure use reference](https://docs.github.com/en/actions/reference/security/secure-use) when reviewing action pinning, token privileges, or untrusted input.
+* [Dependency caching](https://docs.github.com/en/actions/reference/workflows-and-actions/dependency-caching) when changing keys, restore behavior, or cache access.
+* [OpenID Connect](https://docs.github.com/en/actions/concepts/security/openid-connect) when configuring short-lived cloud authentication and trust.
