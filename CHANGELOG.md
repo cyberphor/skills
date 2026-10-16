@@ -4,6 +4,9 @@
 ### Added
 * Added the `write-text` skill
 
+### Updated
+* Renamed six skills to use action-first names without prepositions and updated their titles and references
+
 ## [0.1.7] - 2026-10-16
 ### Added
 * Added the `write-agent-skill` and `write-text-in-markdown` skills, including a complete Markdown document example

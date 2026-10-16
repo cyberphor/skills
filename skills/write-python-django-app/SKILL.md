@@ -1,11 +1,11 @@
 ---
-name: write-django-app-in-python
+name: write-python-django-app
 description: Create or update Django applications, models, forms, views, and migrations. Use when writing code that depends on Django framework behavior.
 ---
 
-# How to Write Django App in Python
+# How to Write Python Django App
 
-Read and apply `write-code-in-python` from the active skill catalog or [sibling skill](../write-code-in-python/SKILL.md) for Python style and tooling. Reuse it if already loaded.
+Read and apply `write-python-code` from the active skill catalog or [sibling skill](../write-python-code/SKILL.md) for Python style and tooling. Reuse it if already loaded.
 
 Inspect the installed Django version, settings, app configuration, relevant models, URL patterns, views, templates, migrations, and tests before editing. Use documentation for that version. Preserve the project's app boundaries, database backend, authentication model, and deployment configuration.
 

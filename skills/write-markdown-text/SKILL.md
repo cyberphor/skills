@@ -1,9 +1,9 @@
 ---
-name: write-text-in-markdown
+name: write-markdown-text
 description: Create or update text in Markdown format. Use when asked to write Markdown content.
 ---
 
-# How to Write Text in Markdown
+# How to Write Markdown Text
 
 ## Headers
 

@@ -7,7 +7,7 @@ description: Create or update GitHub Actions workflows and reusable actions. Use
 
 Inspect existing workflows, action metadata, reusable configurations, repository instructions, and the commands they invoke. Establish the intended event, checked-out revision, runner, job dependencies, and required tools before editing. Preserve existing release and deployment scope.
 
-Read and apply `write-text` from the active skill catalog or [sibling skill](../write-text/SKILL.md) when drafting comments or explanations. Reuse it if already loaded. Apply `write-makefile`, `write-code-in-go`, or `write-code-in-python` through the catalog or [Write Makefile](../write-makefile/SKILL.md), [Write Code in Go](../write-code-in-go/SKILL.md), or [Write Code in Python](../write-code-in-python/SKILL.md) skills when editing those files. Workflow commands should preserve the project's required artifacts and tooling.
+Read and apply `write-text` from the active skill catalog or [sibling skill](../write-text/SKILL.md) when drafting comments or explanations. Reuse it if already loaded. Apply `write-makefile`, `write-go-code`, or `write-python-code` through the catalog or [Write Makefile](../write-makefile/SKILL.md), [Write Go Code](../write-go-code/SKILL.md), or [Write Python Code](../write-python-code/SKILL.md) skills when editing those files. Workflow commands should preserve the project's required artifacts and tooling.
 
 ## Events and Revisions
 

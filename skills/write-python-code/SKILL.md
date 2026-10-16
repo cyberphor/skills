@@ -1,9 +1,9 @@
 ---
-name: write-code-in-python
+name: write-python-code
 description: Create or update Python source, tests, and code examples in the user's concise, explicit style. Use when writing Python modules, services, parsers, or automation, including Python changes within a larger task.
 ---
 
-# How to Write Code in Python
+# How to Write Python Code
 
 Use this skill to produce Python that is explicit, readable, typed, and operationally simple.
 
