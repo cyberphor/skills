@@ -1,5 +1,9 @@
 # Changelog
 
+## [0.1.8]
+### Added
+* Added the `write-text` skill
+
 ## [0.1.7] - 2026-10-16
 ### Added
 * Added the `write-agent-skill` and `write-text-in-markdown` skills, including a complete Markdown document example

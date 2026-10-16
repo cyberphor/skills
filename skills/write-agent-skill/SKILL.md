@@ -38,6 +38,7 @@ The `reference` directory is for providing examples or additional details.
 The `assets` directory is for providing images, templates, configuration files, etc. that should be used to execute the skill. 
 
 * When relevant, include an `assets` directory for templates mentioned in the skill. 
+* Prefix files that contain a template with `template-`. 
 
 **Scripts**  
 
