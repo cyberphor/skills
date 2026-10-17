@@ -1,11 +1,12 @@
 # Changelog
 
-## [0.1.8]
+## [0.1.8] - 2026-10-16
 ### Added
 * Added the `write-text` skill
 
 ### Updated
-* Renamed six skills to use action-first names without prepositions and updated their titles and references
+* Standardized every skill around `fix`, `read`, or `write` action-first names, two-sentence lifecycle descriptions, grammatically natural how-to titles, and conforming example and template names
+* Renamed the GitHub workflow, Kubernetes workload, UDS Core deployment, Go Bubble Tea, and Python Django skills to remove obsolete prefixes and filler words
 
 ## [0.1.7] - 2026-10-16
 ### Added
@@ -80,6 +81,11 @@
 ### Added
 - Added `write-go` skill
 
+[0.1.7]: https://github.com/cyberphor/skills/releases/tag/0.1.7
+[0.1.6]: https://github.com/cyberphor/skills/releases/tag/0.1.6
+[0.1.5]: https://github.com/cyberphor/skills/releases/tag/0.1.5
+[0.1.4]: https://github.com/cyberphor/skills/releases/tag/0.1.4
+[0.1.3]: https://github.com/cyberphor/skills/releases/tag/0.1.3
 [0.1.2]: https://github.com/cyberphor/agent-skills/releases/tag/0.1.2
 [0.1.1]: https://github.com/cyberphor/agent-skills/releases/tag/0.1.1
 [0.1.0]: https://github.com/cyberphor/agent-skills/releases/tag/0.1.0

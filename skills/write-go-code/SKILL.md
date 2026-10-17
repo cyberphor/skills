@@ -1,6 +1,6 @@
 ---
 name: write-go-code
-description: Create or update Go source, tests, and code examples in the user's preferred style. Use when writing Go programs, packages, or command-line tools, including Go changes within a larger task.
+description: Writes or updates Go source, tests, and code examples in the user's preferred style. Use when asked to create or update Go programs, packages, or command-line tools, including Go changes within a larger task.
 ---
 
 # How to Write Go Code

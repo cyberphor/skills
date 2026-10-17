@@ -1,6 +1,6 @@
 ---
 name: write-markdown-text
-description: Create or update text in Markdown format. Use when asked to write Markdown content.
+description: Writes or updates text in Markdown format. Use when asked to create or update Markdown content.
 ---
 
 # How to Write Markdown Text

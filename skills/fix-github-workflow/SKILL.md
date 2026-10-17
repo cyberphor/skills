@@ -1,10 +1,10 @@
 ---
-name: resolve-github-workflow-failure
-description: Read GitHub Actions workflow failure evidence and update the affected repository with the selected fix only after approval. Use when asked to analyze or resolve a failed workflow run.
+name: fix-github-workflow
+description: Reads GitHub Actions workflow evidence and updates the affected repository with an approved fix. Use when asked to read or fix a failed GitHub Actions workflow run.
 compatibility: Requires access to the internet, the GitHub CLI (gh), and a GitHub Personal Access Token (saved as an environment variable called GH_TOKEN) with at least Contents (Read and write), Pull requests (Read and write), and Workflows (Read and write) permissions in the repository where the workflow ran.
 ---
 
-# How to Resolve GitHub Workflow Failure
+# How to Fix a GitHub Actions Workflow
 
 ## Prerequisites
 

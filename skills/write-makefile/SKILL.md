@@ -1,9 +1,9 @@
 ---
 name: write-makefile
-description: Create or update Makefiles in the preferred style. Use when writing project task automation, build or test workflows, targets, and recipes.
+description: Writes or updates Makefiles in the preferred style. Use when asked to create or update project automation, build or test workflows, targets, or recipes.
 ---
 
-# How to Write Makefile
+# How to Write a Makefile
 
 Use Makefiles as a readable entrypoint for routine project tasks. Inspect the existing Makefile, project configuration, and invoked tools before editing. Align targets being changed with these preferences, including small directly related changes needed for consistency. Established inconsistent style alone does not override these preferences. Respect explicit user and repository instructions and configuration. Preserve target interfaces, required tooling, and behavior unless the relevant preference or task calls for a change. Avoid unrelated project-wide target renames, restructuring, or reformatting.
 

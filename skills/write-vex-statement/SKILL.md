@@ -1,6 +1,6 @@
 ---
-name: write-vex-text
-description: Create or update Vulnerability Exploitability eXchange (VEX) statements for exact software artifacts and vulnerabilities. Use when recording exploitability evidence as VEX or integrating those statements with a vulnerability consumer, rather than for plain scan triage or dependency patching.
+name: write-vex-statement
+description: Writes or updates Vulnerability Exploitability eXchange (VEX) statements for exact software artifacts and vulnerabilities. Use when asked to create or update exploitability evidence for a VEX consumer, rather than to triage a scan or patch a dependency.
 ---
 
 # How to Write VEX Text

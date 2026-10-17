@@ -1,6 +1,6 @@
 ---
 name: write-text
-description: Creates or updates text. Use when asked to create or update any kind of text.
+description: Writes or updates text. Use when asked to create or update any kind of text.
 ---
 
 # How to Write Text

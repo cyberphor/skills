@@ -1,9 +1,9 @@
 ---
 name: write-dockerfile
-description: Create or update Dockerfiles and their build contexts. Use when writing container image builds and runtime packaging.
+description: Writes or updates Dockerfiles and their build contexts. Use when asked to create or update container image builds or runtime packaging.
 ---
 
-# How to Write Dockerfile
+# How to Write a Dockerfile
 
 Inspect the existing Dockerfile, build context, dependency manifests, image consumers, and runtime requirements before editing. Preserve required entrypoints, ports, architecture support, and artifact paths. Apply changes to the requested image rather than imposing a new deployment workflow.
 

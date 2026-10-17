@@ -1,6 +1,6 @@
 ---
 name: write-python-code
-description: Create or update Python source, tests, and code examples in the user's concise, explicit style. Use when writing Python modules, services, parsers, or automation, including Python changes within a larger task.
+description: Writes or updates Python source, tests, and code examples in the user's concise, explicit style. Use when asked to create or update Python modules, services, parsers, or automation, including Python changes within a larger task.
 ---
 
 # How to Write Python Code

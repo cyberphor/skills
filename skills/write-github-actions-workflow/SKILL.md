@@ -1,9 +1,9 @@
 ---
 name: write-github-actions-workflow
-description: Create or update GitHub Actions workflows and reusable actions. Use when writing repository checks, builds, releases, or deployments in .github/workflows.
+description: Writes or updates GitHub Actions workflows and reusable actions. Use when asked to create or update repository checks, builds, releases, or deployments with GitHub Actions.
 ---
 
-# How to Write GitHub Actions Workflow
+# How to Write a GitHub Actions Workflow
 
 Inspect existing workflows, action metadata, reusable configurations, repository instructions, and the commands they invoke. Establish the intended event, checked-out revision, runner, job dependencies, and required tools before editing. Preserve existing release and deployment scope.
 

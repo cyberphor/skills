@@ -1,10 +1,10 @@
 ---
-name: resolve-uds-core-deployment-failure
-description: Read local k3s and k3d UDS Core deployment failure evidence and update affected resources with the selected recovery only after approval. Use for failures involving namespace termination, admission, Pepr, Istio, host limits, package reconciliation, and Keycloak.
+name: fix-uds-core-deployment
+description: Reads local k3s and k3d UDS Core deployment evidence and updates affected resources with an approved fix. Use when asked to read or fix namespace termination, admission, Pepr, Istio, host limit, package reconciliation, or Keycloak problems.
 compatibility: Requires kubectl access and permission to read the affected local k3s or k3d cluster resources, plus permission to update them for an approved recovery.
 ---
 
-# How to Resolve UDS Core Deployment Failure
+# How to Fix a UDS Core Deployment
 
 ## Prerequisites
 

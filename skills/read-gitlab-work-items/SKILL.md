@@ -1,6 +1,6 @@
 ---
 name: read-gitlab-work-items
-description: Read, analyze, and summarize GitLab Work Items such as Epics and Issues. Use when asked to inspect Work Items created, updated, or closed for one or more software projects without changing them.
+description: Reads and summarizes GitLab Work Items such as Epics and Issues. Use when asked to read or summarize Work Items created, updated, or closed for one or more software projects without changing them.
 compatibility: Requires access to the internet, the GitLab CLI (glab), a GitLab API host (saved as an environment variable called GITLAB_API_HOST), and a GitLab Personal Access Token (saved as an environment variable called GITLAB_TOKEN) with at least the read_api permission in the repositories where the Work Items exist.
 ---
 

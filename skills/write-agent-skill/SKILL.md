@@ -1,6 +1,6 @@
 ---
 name: write-agent-skill
-description: Creates or updates agent skills. Use when asked to create or update an agent skill.
+description: Writes or updates agent skills. Use when asked to create or update an agent skill.
 ---
 
 # How to Write an Agent Skill
@@ -19,7 +19,7 @@ description: Creates or updates agent skills. Use when asked to create or update
 
 ## Body Content
 
-* Start the body of the skill with a header that matches the skill name prefixed with "How to." For example, use `# How to Write Markdown Text` for the `write-markdown-text` skill.
+* Start the body with a grammatically natural "How to" header that expands the skill name. Restore articles, prepositions, and type words such as `app` when they make the title natural, even though identifiers omit them. For example, use `# How to Write an Agent Skill` for the `write-agent-skill` skill.
 * If there is a specification relevant to the skill, use it to inform how the skill's body content is organized. For example, the sections in the `write-markdown-text` skill were chosen based on the sections in [the original specification for Markdown](https://daringfireball.net/projects/markdown/syntax). The sections in the `write-python-code` skill were chosen based on the sections in [the Python standard library reference manual](https://docs.python.org/3/library/index.html).
 
 ## Progressive Disclosure

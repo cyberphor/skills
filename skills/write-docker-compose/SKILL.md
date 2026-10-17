@@ -1,6 +1,6 @@
 ---
 name: write-docker-compose
-description: Create or update Docker Compose service configurations. Use when writing Compose application workflows, service connectivity, or startup configuration.
+description: Writes or updates Docker Compose service configurations. Use when asked to create or update Compose services, connectivity, or startup configuration.
 ---
 
 # How to Write Docker Compose
