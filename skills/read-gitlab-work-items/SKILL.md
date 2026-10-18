@@ -4,8 +4,6 @@ description: Reads and summarizes GitLab Work Items such as Epics and Issues. Us
 compatibility: Requires access to the internet, the GitLab CLI (glab), a GitLab API host (saved as an environment variable called GITLAB_API_HOST), and a GitLab Personal Access Token (saved as an environment variable called GITLAB_TOKEN) with at least the read_api permission in the repositories where the Work Items exist.
 ---
 
-# How to Read GitLab Work Items
-
 ## Prerequisites
 
 Check if the tools below are installed. If any of them are not installed, stop what you are doing, report which tools are missing, and do not continue.

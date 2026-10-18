@@ -2,11 +2,16 @@
 
 ## [0.1.8] - 2026-10-16
 ### Added
+* Added the `fix-uds-core-k3d-standard-deployment` skill for checking inotify limits, CoreDNS `NodeHosts`, and WSL versions
 * Added the `write-text` skill
 
-### Updated
-* Standardized every skill around `fix`, `read`, or `write` action-first names, two-sentence lifecycle descriptions, grammatically natural how-to titles, and conforming example and template names
+### Changed
 * Renamed the GitHub workflow, Kubernetes workload, UDS Core deployment, Go Bubble Tea, and Python Django skills to remove obsolete prefixes and filler words
+* Standardized every skill around `fix`, `read`, or `write` action-first names, two-sentence lifecycle descriptions, grammatically natural how-to titles, and conforming example and template names
+
+### Removed
+* Removed the `fix-kubernetes-workload` skill
+* Removed the `fix-uds-core-deployment` skill
 
 ## [0.1.7] - 2026-10-16
 ### Added
