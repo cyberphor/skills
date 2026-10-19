@@ -1,6 +1,6 @@
 ---
 name: fix-uds-core-k3d-deployment
-description: Troubleshoots k3d-based Unified Defense Stack (UDS) Core deployments within Windows Subsystem for Linux (WSL). Use when asked to troubleshoot k3d-based UDS Core deployments within WSL.
+description: Troubleshoots k3d-based Unified Defense Stack (UDS) Core deployments within Windows Subsystem for Linux (WSL). Use when asked to troubleshoot k3d-based deployments of UDS Core within WSL.
 compatibility: Requires access to WSL and sudo privileges as well as kubectl and uds to be installed. 
 ---
 
