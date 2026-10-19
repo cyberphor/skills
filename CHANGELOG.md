@@ -1,8 +1,8 @@
 # Changelog
 
-## [0.1.8] - 2026-10-16
+## [0.1.8] - 2026-10-19
 ### Added
-* Added the `fix-uds-core-k3d-standard-deployment` skill for checking inotify limits, CoreDNS `NodeHosts`, and WSL versions
+* Added the `fix-uds-core-k3d-deployment` skill for checking inotify limits, CoreDNS `NodeHosts`, and WSL versions
 * Added the `write-text` skill
 
 ### Changed

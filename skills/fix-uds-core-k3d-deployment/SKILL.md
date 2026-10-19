@@ -25,4 +25,7 @@ Do the following before investigating or considering other root causes for the p
   * Check if their DNS configuration resolves the IP address of the host identified in their UDS package. 
   * Check if they exhausted the number inotify instances they can open concurrently. 
   * Check if the `NodeHosts` data in the `coredns` ConfigMap includes `host.k3d.internal`.
+  * Identify the current UDS Core version using `zarf package list`. 
+  * Check if there are any known issues for the the UDS Core component versions currently deployed. 
+  * Check if the kernel driver Falco is configured to use is compatible with the WSL host kernel.
   * Compare the version of WSL they are running against the latest available version. 
