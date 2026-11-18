@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.1.9
+### Added
+* Added the `domain-modeling` skill for developing domain terminology, glossaries, and architecture decision records
+
 ## [0.1.8] - 2026-10-22
 ### Added
 * Added the `fix-uds-core-k3d-deployment` skill for checking inotify limits, CoreDNS `NodeHosts`, and WSL versions
